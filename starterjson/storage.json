@@ -2,6 +2,13 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "storageName": {
+           "type": "string",
+           "metadata": {
+                "description": "Name of your storage account. Text only no space."
+            },
+            "maxLength": 10
+        },
         "storageSKU": {
             "type": "string",
             "allowedValues": [
@@ -21,7 +28,7 @@
     "functions": [],
     "variables": {},
     "resources": [{
-        "name": "storageaccount1",
+        "name": "rewestorageaccountx",
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2023-01-01",
         "tags": {
@@ -32,7 +39,10 @@
         "sku": {
             "name": "Premium_LRS",
             "tier": "Premium"
-        }
+        },
+        "properties": {
+                "supportsHttpsTrafficOnly": true
+            }
     }],
 
     "outputs": {}
