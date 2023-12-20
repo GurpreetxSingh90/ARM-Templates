@@ -8,6 +8,14 @@
                 "description": "Name of your storage account. Text only no space."
             },
             "maxLength": 10
+            
+        },
+    "mydate": {
+           "type": "string",
+           "defaultValue": "[utcNow('yyyyMMddTHHmm')]",
+           "metadata": {
+                "description": "description"
+            }
         },
         "storageSKU": {
             "type": "string",
@@ -23,8 +31,8 @@
             "description": "The type of replication to use for the storage account."
     }
 
-            }
-        },
+  }
+},
     "functions": [],
     "variables": {},
     "resources": [{
