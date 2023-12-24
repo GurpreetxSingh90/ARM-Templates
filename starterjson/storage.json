@@ -7,7 +7,7 @@
            "metadata": {
                 "description": "Name of your storage account. Text only no space."
             },
-            "maxLength": 10
+            "maxLength": 40
             
         },
     "mydate": {
@@ -36,11 +36,11 @@
     "functions": [],
     "variables": {},
     "resources": [{
-        "name": "rewestorageaccountx",
+        "name": "[concat(parameters('storageName'))]",
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2023-01-01",
         "tags": {
-            "displayName": "storageaccount1"
+            "displayName": "storageaccount123"
         },
         "location": "[resourceGroup().location]",
         "kind": "StorageV2",

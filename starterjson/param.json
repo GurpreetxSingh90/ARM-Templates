@@ -4,7 +4,11 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
       "storageName": {
-          "value": "tststorage"
+          "value": "rewe"
+      },
+      "mydate":{
+          "value": "20231224T1230"
+
       },
       "storageSKU": {
           "value": "Premium_LRS"
