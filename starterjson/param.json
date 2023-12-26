@@ -4,7 +4,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
       "storageName": {
-          "value": "rewenew"
+          "value": "stogain"
       },
       "mydate":{
           "value": "20231226T1130"

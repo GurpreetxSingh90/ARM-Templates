@@ -84,5 +84,15 @@
             }
     }],
 
-    "outputs": {}
+    "outputs": {
+        "storageAccountName": {
+        "condition": "[equals(parameters('environment'), 'PROD')]",
+        "type": "string",
+        "value": "[toLower(concat(parameters('storageName'), parameters('suffix')))]"
+        // "copy": {
+        //     "count": 1 //<number-of-iterations>,
+        //     "input": 0  // <values-for-the-variable>
+        // }
+    }
+    }
 }
