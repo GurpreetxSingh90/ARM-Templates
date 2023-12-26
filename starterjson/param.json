@@ -4,10 +4,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
       "storageName": {
-          "value": "rewe"
+          "value": "rewenew"
       },
       "mydate":{
-          "value": "20231224T1230"
+          "value": "20231226T1130"
 
       },
       "storageSKU": {
